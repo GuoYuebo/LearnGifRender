@@ -4,6 +4,13 @@
              xmlns:vm="clr-namespace:ScreenToGif.ViewModel"
              Startup="App_Startup">
     <Application.Resources>
-        <vm:ApplicationViewModel x:Key="AppViewModel"/>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Resources/Localization/StringResources.zh.xaml"/>
+                <ResourceDictionary Source="/Resources/Localization/StringResources.en.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <vm:ApplicationViewModel x:Key="AppViewModel"/>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

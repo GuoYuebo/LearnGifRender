@@ -60,6 +60,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="MVVMHelper\RelayCommand.cs" />
+    <Compile Include="Utils\LocalizationHelper.cs" />
     <Compile Include="ViewModel\ApplicationViewModel.cs" />
     <Compile Include="View\Recorder.xaml.cs">
       <DependentUpon>Recorder.xaml</DependentUpon>
@@ -93,6 +94,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Resources\Localization\StringResources.en.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Localization\StringResources.zh.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Recorder.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

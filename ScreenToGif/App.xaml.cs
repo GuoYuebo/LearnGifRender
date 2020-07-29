@@ -1,4 +1,5 @@
-﻿using ScreenToGif.ViewModel;
+﻿using ScreenToGif.Utils;
+using ScreenToGif.ViewModel;
 using System.Windows;
 
 namespace ScreenToGif
@@ -15,6 +16,8 @@ namespace ScreenToGif
             #region ViewModel
             MainViewModel = (ApplicationViewModel)FindResource("AppViewModel") ?? new ApplicationViewModel();
             #endregion
+
+            LocalizationHelper.SelectCulture("");
 
             #region Startup
             MainViewModel.OpenRecorder.Execute(null);
